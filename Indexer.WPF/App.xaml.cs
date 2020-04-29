@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Windows;
+﻿using System.Windows;
 
 namespace Indexer.WPF
 {
@@ -13,5 +7,12 @@ namespace Indexer.WPF
     /// </summary>
     public partial class App : Application
     {
+        private void AppStartup(object sender, StartupEventArgs eventArgs)
+        {
+            var window = new MainWindow();
+            window.WindowState = WindowState.Maximized;
+            window.WindowStyle = WindowStyle.None;
+            window.Show();
+        }
     }
 }
