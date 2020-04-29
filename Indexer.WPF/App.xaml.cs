@@ -9,10 +9,10 @@ namespace Indexer.WPF
     {
         private void AppStartup(object sender, StartupEventArgs eventArgs)
         {
-            var window = new MainWindow();
-            window.WindowState = WindowState.Maximized;
-            window.WindowStyle = WindowStyle.None;
-            window.Show();
+            //var window = new PageSwitcher();
+            //window.WindowState = WindowState.Maximized;
+            //window.WindowStyle = WindowStyle.None;
+            //window.Show();
         }
     }
 }
